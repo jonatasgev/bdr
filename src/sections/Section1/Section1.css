@@ -1,5 +1,6 @@
 .section1 {
   height: 100vh;
+  text-align: center;
 }
 
 /* SLIDER */
@@ -63,7 +64,7 @@
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section1 h1 {
     font-size: 60px;
   }
@@ -75,7 +76,7 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .section1 b {
     font-size: 24px;
     font-weight: 700;
@@ -96,7 +97,7 @@
   width: 20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
     .section1 .arrowDown img {
         width: 30px;
     }
