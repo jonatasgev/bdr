@@ -11,7 +11,13 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 400px) {
+  .section2 .slick-slider {
+    max-width: calc(100% - 100px);
+  }
+}
+
+@media screen and (min-width: 1201px) {
   .section2 .slick-slider {
     max-width: 1024px;
   }
@@ -22,6 +28,14 @@
   height: 40px;
   width: 40px;
 }
+
+@media screen and (max-width: 400px) {
+  .section2 .slick-arrow {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 .section2 .slick-arrow::before {
   background-image: url(./../../assets/img/arrow-down.png);
   background-position: 50% 50%;
@@ -36,8 +50,21 @@
   width: 30px;
 }
 
+@media screen and (max-width: 400px) {
+  .section2 .slick-arrow::before {
+    height: 30px;
+    width: 20px;
+  }
+}
+
 .section2 .slick-prev {
-    left: -45px;
+  left: -45px;
+}
+
+@media screen and (max-width: 400px) {
+  .section2 .slick-prev {
+    left: -35px;
+  }
 }
 
 .section2 .slick-prev::before {
@@ -45,7 +72,13 @@
 }
 
 .section2 .slick-next {
-    right: -45px;
+  right: -45px;
+}
+
+@media screen and (max-width: 400px) {
+  .section2 .slick-next {
+    right: -35px;
+  }
 }
 
 .section2 .slick-next::before {
