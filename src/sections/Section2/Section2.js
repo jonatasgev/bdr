@@ -38,7 +38,7 @@ class Section2 extends Component {
       <div id="Section2" className="section2">
         <Slider {...this.sliderSettings}>
           {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(e => (
-            <div className="slider-item">
+            <div className="slider-item" key={`slider-item-${e}`}>
               <img src={img1} alt={"img1-" + e} />
               <b className="title">Lorem Ipsum</b>
               <p>
