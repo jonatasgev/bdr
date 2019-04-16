@@ -13,8 +13,9 @@
 /* SLIDER - DOTS */
 .section1 .slick-dots {
   background-color: rgba(50, 50, 50, 0.8);
+  bottom: 0;
   height: 72px;
-  margin-top: -97px;
+  margin-top: -72px;
   overflow: hidden;
   padding: 20px 0;
   position: relative;
