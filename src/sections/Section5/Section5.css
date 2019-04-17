@@ -1,3 +1,223 @@
-.section5 {
-    color: gray;
+.section5.gradient {
+  background: #6f6f6f;
+  background: -moz-linear-gradient(
+    to bottom right,
+    #6f6f6f 0%,
+    #6f6f6f 50%,
+    #454545 50%,
+    #454545 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right bottom,
+    color-stop(0%, #6f6f6f),
+    color-stop(50%, #6f6f6f),
+    color-stop(50%, #454545),
+    color-stop(100%, #454545)
+  );
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #6f6f6f 0%,
+    #6f6f6f 50%,
+    #454545 50%,
+    #454545 100%
+  );
+  background: -o-linear-gradient(
+    to bottom right,
+    #6f6f6f 0%,
+    #6f6f6f 50%,
+    #454545 50%,
+    #454545 100%
+  );
+  background: -ms-linear-gradient(
+    to bottom right,
+    #6f6f6f 0%,
+    #6f6f6f 50%,
+    #454545 50%,
+    #454545 100%
+  );
+  background: linear-gradient(
+    to bottom right,
+    #6f6f6f 0%,
+    #6f6f6f 50%,
+    #454545 50%,
+    #454545 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f6f6f', endColorstr='#454545', GradientType=1 );
+
+  padding: 20px;
+}
+
+@media screen and (min-width: 769px) {
+  .section5.gradient {
+    padding: 40px;
+  }
+}
+
+/* FORM - COLS */
+@media screen and (max-width: 768px) {
+  .section5 form .col-right .field {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .section5 form .col {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .section5 form .col-left {
+    padding-right: 6px;
+  }
+
+  .section5 form .col-right {
+    padding-left: 6px;
+  }
+
+  .section5 .col .field {
+    margin: 0;
+  }
+}
+
+/* FORM - FIELD */
+.section5 .field {
+  background-color: #bebebe;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 12px 0;
+  padding: 13px 20px;
+  width: 100%;
+}
+
+.section5 .field:first-child {
+  margin-top: 0;
+}
+
+.section5 .field input,
+.section5 .field textarea {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 14px;
+  height: 44px;
+  margin-bottom: -15px;
+  margin-top: -15px;
+}
+
+/* FORM - FIELD LABEL */
+.section5 .field label {
+  float: left;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 22px;
+  padding-right: 10px;
+  min-width: 65px;
+}
+
+/* FORM - FIELD INPU */
+.section5 .field input {
+  width: calc(100% - 65px);
+}
+
+/* FORM - FIELD PHONE LABEL */
+.section5 .field-phone label {
+  width: 80px;
+}
+
+/* FORM - FIELD PHONE INPUT */
+.section5 .field-phone input {
+  width: calc(100% - 80px);
+}
+
+/* FORM - FIELD MESSAGE LABEL */
+.section5 .field-message label {
+  width: 90px;
+}
+
+/* FORM - FIELD MESSAGE INPUT */
+.section5 .field-message textarea {
+  height: 140px;
+  margin: 0;
+  width: calc(100% - 90px);
+}
+
+/* FORM - ACTION BUTOTNS */
+.section5 .actions {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.section5 form button {
+  background-color: #ffffff;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 15px 35px;
+  text-transform: uppercase;
+}
+
+/* FORM - DIALOG */
+.section5 #dialog {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: all ease-in-out 150ms;
+  width: 100%;
+}
+
+.section5 #dialog.active {
+  display: block;
+}
+
+.section5 #dialog.active.animate {
+  opacity: 1;
+}
+
+.section5 #dialog div {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #333333;
+  height: 215px;
+  margin: auto;
+  margin-top: 32vh;
+  padding: 20px;
+  text-align: center;
+  transition: all ease-in-out 150ms;
+  transform: scale(0.8); 
+  width: 300px;
+}
+
+.section5 #dialog.active.animate div {
+  transform: scale(1); 
+}
+
+.section5 #dialog h1 {
+  font-size: 30px;
+}
+
+.section5 #dialog button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid #aaaaaa;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin-top: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all linear 150ms;
+}
+
+.section5 #dialog button:hover {
+  background-color: #eeeeee;
+  border-color: #dddddd;
 }
