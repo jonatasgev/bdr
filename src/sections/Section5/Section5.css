@@ -54,6 +54,12 @@
   }
 }
 
+/* FORM */
+.section5 form {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
 /* FORM - COLS */
 @media screen and (max-width: 768px) {
   .section5 form .col-right .field {
