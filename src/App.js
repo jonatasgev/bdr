@@ -10,6 +10,9 @@ import {
   Section5
 } from "./sections/Sections";
 
+// COMPONENTS
+import Footer from "./components/Footer/Footer";
+
 class App extends Component {
   render() {
     return (
@@ -19,6 +22,7 @@ class App extends Component {
         <Section3 />
         <Section4 />
         <Section5 />
+        <Footer />
       </div>
     );
   }
