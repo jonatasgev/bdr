@@ -37,7 +37,7 @@ class Section4 extends Component {
 
   render() {
     return (
-      <div className="section4">
+      <div className="section4 backward-compatibility">
         <Collapse accordion={true} expandIcon={this.expandIcon}>
           {this.getItems()}
         </Collapse>

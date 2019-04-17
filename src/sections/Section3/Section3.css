@@ -11,20 +11,31 @@
   }
 }
 
+/* CONTAINER */
+.section3 .container {
+  margin: 0 auto;
+  max-width: 1210px;
+}
+
+.section3:not(.enable-backward-compatibility) .container {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media screen and (min-width: 769px) {
-  .section3 {
+  .section3:not(.enable-backward-compatibility) .container {
     flex-wrap: nowrap;
   }
 }
 
-/* CONTAINER */
-.section3 .container {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 auto;
-    max-width: 1210px;
+.section3.enable-backward-compatibility .container {
+  display: table;
+}
+
+.section3.enable-backward-compatibility .container > * {
+  display: table-cell;
 }
 
 /* IMAGE */

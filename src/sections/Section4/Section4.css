@@ -80,16 +80,24 @@
 }
 
 /* COLLAPSIBLE - CONTENT */
-.section4 .rc-collapse-content .content {
+.section4:not(.enable-backward-compatibility) .rc-collapse-content .content {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 @media screen and (min-width: 769px) {
-  .section4 .rc-collapse-content .content {
+  .section4:not(.enable-backward-compatibility) .rc-collapse-content .content {
     flex-wrap: nowrap;
   }
+}
+
+.section4.enable-backward-compatibility .rc-collapse-content .content {
+  display: table;
+}
+
+.section4.enable-backward-compatibility .rc-collapse-content .content > * {
+  display: table-cell;
 }
 
 /* COLLAPSIBLE - CONTENT IMAGE */

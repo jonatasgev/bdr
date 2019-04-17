@@ -5,7 +5,7 @@ import img from "./../../assets/img/img1.jpg";
 class Section3 extends Component {
   render() {
     return (
-      <div className="section3">
+      <div className="section3 backward-compatibility">
         <div className="container">
           <div className="img" style={{ backgroundImage: `url(${img})` }} />
 
