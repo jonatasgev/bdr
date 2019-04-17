@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { Element } from "react-scroll";
 import "./Section2.css";
 import img1 from "./../../assets/img/img1.jpg";
 
@@ -36,20 +37,22 @@ class Section2 extends Component {
   render() {
     return (
       <div id="Section2" className="section2">
-        <Slider {...this.sliderSettings}>
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(e => (
-            <div className="slider-item" key={`slider-item-${e}`}>
-              <img src={img1} alt={"img1-" + e} />
-              <b className="title">Lorem Ipsum</b>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravida. Risus commodo viverra
-                maecenas accumsan lacus vel facilisis.
-              </p>
-            </div>
-          ))}
-        </Slider>
+        <Element name="Section2">
+          <Slider {...this.sliderSettings}>
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(e => (
+              <div className="slider-item" key={`slider-item-${e}`}>
+                <img src={img1} alt={"img1-" + e} />
+                <b className="title">Lorem Ipsum</b>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Quis ipsum suspendisse ultrices gravida. Risus commodo viverra
+                  maecenas accumsan lacus vel facilisis.
+                </p>
+              </div>
+            ))}
+          </Slider>
+        </Element>
       </div>
     );
   }
